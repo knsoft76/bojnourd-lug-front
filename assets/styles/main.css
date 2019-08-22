@@ -58,5 +58,67 @@ Version : 0.1
 body {
     font-family: irsans;
     text-align: right;
+    direction: rtl;
+     
 }
 /******************** General Styles /********************/
+/******************** login-register Styles /********************/
+
+.modal-header ul li a{
+    padding-right: 15px;
+    color: white;
+}
+.modal-header ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+#username{
+    border-radius: 20px;
+}
+#password{
+    border-radius: 20px;
+}
+#btn{
+    border-radius: 20px;
+}
+label{
+    font-size: 14px;
+    color: white;
+}
+#FirstName{
+    border-radius: 20px;
+}
+#LastName{
+    border-radius: 20px;
+}
+#Email{
+    border-radius: 20px;
+}
+#PhoneNumber{
+    border-radius: 20px;
+}
+#Password{
+    border-radius: 20px;
+}
+.pad{
+    padding-right:25px;
+}
+#box{
+    background-image: url(../img/1.jpg);
+}
+.checkbox {
+    position: relative;
+    margin-bottom: 10px;
+}
+.checkbox .log1-input {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.checkbox .log2-input {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+/******************** login-register Styles /********************/

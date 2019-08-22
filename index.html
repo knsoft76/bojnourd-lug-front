@@ -4,13 +4,88 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link href="assets/styles/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/main.css">
-    <title>Hello, world!</title>
+    <title>signup, signin</title>
 </head>
-<body >
-    <h1 style="text-align: center">یک متن تست</h1>
+<body>
+<div class="container">
+    <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">ثبت نام / ورود</button>
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog modal-xs">
+            <div class="modal-content" id="box">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab1"> ورود</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab2">ثبت نام</a>
+                        </li>
+                    </ul>
+                </div><!--modal-header-->
+                <div class="modal-body ">
+                    <div class="tab-content ">
+                        <div id="tab1" class="tab-pane active">
+                            <form action="">
+                                <div class="form-group">
 
+                                    <input type="text" class="form-control" id="username" placeholder="نام کاربری">
+                                </div><!--form-group-->
+                                <div class="form-group">
 
+                                    <input type="password" class="form-control" id="password" placeholder="گذرواژه">
+                                </div><!--form-group-->
+                                <br>
+                                <div class="checkbox">
+
+                                    <label class="pad" for=""><input  class="log1-input"type="checkbox">مرا به خاطر بسپار</label>
+                                </div><!--checkbox-->
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-ex btn-block" id="btn">ارسال</button>
+                            </form>
+                        </div><!--tab-pane fade in active-->
+                        <div id="tab2" class="tab-pane fade ">
+                            <form action="">
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+
+                                        <input type="text" class="form-control" id="FirstName" placeholder="نام">
+                                    </div><!--form-group-->
+                                    <div class="form-group col-sm-6">
+
+                                        <input type="text" class="form-control" id="LastName"
+                                               placeholder="نام خانوادگی">
+                                    </div><!--form-group-->
+                                </div><!--row-->
+                                <div class="form-group">
+
+                                    <input type="Email" class="form-control" id="Email" placeholder="ایمیل">
+                                </div><!--form-group-->
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="PhoneNumber" placeholder="شماره تلفن">
+                                </div><!--form-group-->
+                                <div class="form-group">
+
+                                    <input type="Password" class="form-control" id="Password" placeholder="گذرواژه">
+                                </div><!--form-group-->
+                                <div class="checkbox">
+                                    <label for="" class="pad"><input class="log2-input" type="checkbox">موافقم</label>
+                                </div><!--checkbox-->
+                                <button type="submit" class="btn btn-primary btn-ex btn-block" id="btn">ارسال</button>
+                            </form>
+                        </div>
+                        <!--tab-pane fade -->
+                    </div><!--tab-content-->
+                </div><!--modal-body-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                </div><!--modal-footer-->
+            </div><!--modal-content-->
+        </div><!--modal-dialog modal-sm-->
+    </div><!--modal fade-->
+</div><!--container-->
 <script src="assets/scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
 <script src="assets/scripts/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/scripts/main.js" type="text/javascript"></script>
